@@ -28,7 +28,7 @@ export default {
   },
   mounted(){
     axios
-    .get("https://api.themoviedb.org/3/movie/now_playing?api_key=df78dbf203b1cd1f3a6d506adc95f2fd&language=en-US&page=1")
+    .get('https://api.themoviedb.org/3/movie/now_playing?api_key=df78dbf203b1cd1f3a6d506adc95f2fd&language=en-US&page=1')
     .then((response) => {
       this.movies = response.data.results.slice(0,4);
     })
